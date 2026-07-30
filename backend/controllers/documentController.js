@@ -36,7 +36,7 @@ const uploadDocument = async (req, res) => {
 
       fileType: req.file.mimetype,
 
-      uploadedBy: req.user._id,
+      uploadedBy: req.user ? req.user._id : null,
 
     });
 
@@ -504,15 +504,8 @@ const deleteDocument = async (req, res) => {
       message: error.message,
 
     });
-
-
   }
-
 };
-
-
-
-
 
 module.exports = {
 
