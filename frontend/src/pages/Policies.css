@@ -1,0 +1,270 @@
+/* ==========================
+   Policies Page
+========================== */
+
+.policies-page{
+  padding:10px;
+}
+
+.policies-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.policies-title{
+  font-size:32px;
+  font-weight:700;
+  color:#1e3a8a;
+  margin:0;
+}
+
+.add-policy-btn{
+  background:#2563eb;
+  color:#fff;
+  border:none;
+  padding:14px 22px;
+  border-radius:12px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.add-policy-btn:hover{
+  background:#1d4ed8;
+  transform:translateY(-2px);
+}
+
+/* ==========================
+   Filter Bar
+========================== */
+
+.filter-bar{
+  display:flex;
+  gap:16px;
+  margin-bottom:24px;
+  flex-wrap:wrap;
+}
+
+.search-box,
+.status-filter{
+  background:#fff;
+  border:1px solid #dbe4f0;
+  border-radius:12px;
+  padding:14px 16px;
+  font-size:15px;
+  color:#334155;
+  outline:none;
+}
+
+.search-box{
+  flex:1;
+  min-width:260px;
+}
+
+.status-filter{
+  min-width:180px;
+}
+
+.search-box:focus,
+.status-filter:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 0 4px rgba(37,99,235,0.12);
+}
+
+/* ==========================
+   Table Container
+========================== */
+
+.policies-table-container{
+  background:#ffffff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(15,23,42,0.08);
+}
+
+/* ==========================
+   Table
+========================== */
+
+.policies-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+/* ===== Header (MAIN FIX) ===== */
+
+.policies-table thead th{
+  background:#2563eb;
+  color:#ffffff;
+  padding:18px 16px;
+  font-size:16px;
+  font-weight:700;
+  text-align:left;
+  white-space:nowrap;
+}
+
+/* ===== Body ===== */
+
+.policies-table tbody td{
+  padding:18px 16px;
+  border-bottom:1px solid #e2e8f0;
+  font-size:15px;
+  color:#334155;
+  vertical-align:middle;
+}
+
+.policies-table tbody tr{
+  transition:background 0.2s ease;
+}
+
+.policies-table tbody tr:hover{
+  background:#f8fafc;
+}
+
+.policies-table tbody tr:last-child td{
+  border-bottom:none;
+}
+
+/* ==========================
+   Status Badges
+========================== */
+
+.status-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:92px;
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:700;
+}
+
+.status-active{
+  background:#dcfce7;
+  color:#166534;
+}
+
+.status-expired{
+  background:#fef3c7;
+  color:#92400e;
+}
+
+.status-pending{
+  background:#dbeafe;
+  color:#1d4ed8;
+}
+
+.status-rejected{
+  background:#fee2e2;
+  color:#991b1b;
+}
+
+/* ==========================
+   Action Buttons
+========================== */
+
+.action-buttons{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.edit-btn,
+.delete-btn{
+  border:none;
+  padding:10px 16px;
+  border-radius:10px;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.25s ease;
+}
+
+.edit-btn{
+  background:#f59e0b;
+  color:#ffffff;
+}
+
+.edit-btn:hover{
+  background:#d97706;
+  transform:translateY(-1px);
+}
+
+.delete-btn{
+  background:#dc2626;
+  color:#ffffff;
+}
+
+.delete-btn:hover{
+  background:#b91c1c;
+  transform:translateY(-1px);
+}
+
+/* ==========================
+   Empty State
+========================== */
+
+.empty-state{
+  padding:48px 20px;
+  text-align:center;
+  color:#64748b;
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media(max-width:900px){
+
+  .policies-title{
+    font-size:28px;
+  }
+
+  .policies-table-container{
+    overflow-x:auto;
+  }
+
+  .policies-table{
+    min-width:860px;
+  }
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:600px){
+
+  .policies-page{
+    padding:6px;
+  }
+
+  .policies-header{
+    align-items:stretch;
+  }
+
+  .add-policy-btn{
+    width:100%;
+  }
+
+  .filter-bar{
+    flex-direction:column;
+  }
+
+  .search-box,
+  .status-filter{
+    width:100%;
+  }
+
+  .policies-table thead th,
+  .policies-table tbody td{
+    padding:14px 12px;
+    font-size:14px;
+  }
+}

@@ -1,0 +1,88 @@
+/* ==========================
+   Admin Layout
+========================== */
+
+.admin-layout {
+
+  display:flex;
+
+  min-height:100vh;
+
+  background:#f4f7fc;
+
+}
+
+
+
+/* ==========================
+   Main Section
+========================== */
+
+.main-section {
+
+  margin-left:280px;
+
+  width:calc(100% - 280px);
+
+  min-height:100vh;
+
+}
+
+
+
+/* ==========================
+   Main Content
+========================== */
+
+.main-content {
+
+  padding:30px;
+
+  padding-top:110px;
+
+  min-height:100vh;
+
+  box-sizing:border-box;
+
+}
+
+
+
+/* ==========================
+   Tablet
+========================== */
+
+@media(max-width:900px){
+
+
+.main-section {
+
+  margin-left:0;
+
+  width:100%;
+
+}
+
+
+
+}
+
+
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:600px){
+
+
+.main-content {
+
+  padding:15px;
+
+  padding-top:90px;
+
+}
+
+
+}

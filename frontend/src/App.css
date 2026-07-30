@@ -1,0 +1,71 @@
+/* App Layout */
+
+.app {
+  min-height: 100vh;
+  background: #f4f7fc;
+}
+
+/* Common Page Container */
+
+.page-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Use only if Navbar becomes fixed */
+
+.with-navbar {
+  padding-top: 0;
+}
+
+/* Common Heading */
+
+.page-title {
+  color: #1e3c72;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Common Card */
+
+.card-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Common Button */
+
+.primary-btn {
+  background: #1e3c72;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #16315c;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .page-container {
+    padding: 15px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+}

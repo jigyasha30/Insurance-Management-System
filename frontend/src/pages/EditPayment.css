@@ -1,0 +1,213 @@
+/* ==========================
+   Edit Payment Container
+========================== */
+
+.edit-payment-container {
+  min-height: 100vh;
+  background: #f4f7fc;
+  padding: 40px 20px;
+}
+
+.edit-payment-container h1 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* ==========================
+   Edit Card
+========================== */
+
+.edit-payment-card {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.edit-payment-card:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================
+   Form Group
+========================== */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+/* ==========================
+   Update Button
+========================== */
+
+.update-payment-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  background: #16a34a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.update-payment-btn:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+}
+
+.update-payment-btn:active {
+  transform: translateY(0);
+}
+
+.update-payment-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ==========================
+   Loading
+========================== */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* ==========================
+   Input Validation
+========================== */
+
+.form-group input:invalid,
+.form-group select:invalid {
+  border-color: #d1d5db;
+}
+
+.form-group input:valid,
+.form-group select:valid {
+  border-color: #22c55e;
+}
+
+/* ==========================
+   Autofill Fix
+========================== */
+
+input:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+  -webkit-text-fill-color: #1f2937;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+  .edit-payment-container {
+    padding: 20px 15px;
+  }
+
+  .edit-payment-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .edit-payment-card {
+    padding: 22px;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .update-payment-btn {
+    font-size: 15px;
+    padding: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edit-payment-container {
+    padding: 15px 10px;
+  }
+
+  .edit-payment-card {
+    padding: 18px;
+  }
+
+  .edit-payment-container h1 {
+    font-size: 22px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 11px;
+  }
+
+  .update-payment-btn {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,215 @@
+/* Edit Customer Page */
+
+.edit-customer-container {
+
+  min-height: 100vh;
+
+  background: #f4f7fc;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 30px;
+
+}
+
+
+
+/* Form Card */
+
+.edit-customer-form {
+
+  width: 100%;
+
+  max-width: 650px;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+
+}
+
+
+
+/* Heading */
+
+.edit-customer-form h2 {
+
+  text-align: center;
+
+  color: #1e3a8a;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  margin-bottom: 25px;
+
+}
+
+
+
+/* Form Layout */
+
+.edit-customer-form form {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+
+}
+
+
+
+/* Input, Select, Textarea */
+
+.edit-customer-form input,
+.edit-customer-form select,
+.edit-customer-form textarea {
+
+
+  width: 100%;
+
+  padding: 12px 15px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+
+
+}
+
+
+
+.edit-customer-form input:focus,
+.edit-customer-form select:focus,
+.edit-customer-form textarea:focus {
+
+
+  border-color: #2563eb;
+
+  box-shadow: 0 0 5px rgba(37,99,235,0.3);
+
+
+}
+
+
+
+/* Address Field */
+
+.edit-customer-form textarea {
+
+  grid-column: span 2;
+
+  height: 100px;
+
+  resize: none;
+
+}
+
+
+
+/* Update Button */
+
+.edit-customer-form button {
+
+
+  grid-column: span 2;
+
+
+  background: #2563eb;
+
+
+  color: white;
+
+
+  border: none;
+
+
+  padding: 13px;
+
+
+  border-radius: 8px;
+
+
+  font-size: 16px;
+
+
+  font-weight: 600;
+
+
+  cursor: pointer;
+
+
+  transition: 0.3s;
+
+
+}
+
+
+
+.edit-customer-form button:hover {
+
+
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+
+  .edit-customer-container {
+
+    padding: 20px;
+
+  }
+
+
+
+  .edit-customer-form {
+
+    padding: 25px;
+
+  }
+
+
+
+  .edit-customer-form form {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+
+  .edit-customer-form textarea,
+  .edit-customer-form button {
+
+    grid-column: span 1;
+
+  }
+
+
+}

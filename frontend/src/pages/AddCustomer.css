@@ -1,0 +1,139 @@
+/* Add Customer Page */
+
+.add-customer-container {
+  min-height: 100vh;
+  background: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+
+/* Form Card */
+
+.customer-form {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+.customer-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1e3a8a;
+  font-size: 28px;
+}
+
+
+/* Form Layout */
+
+.customer-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+
+/* Inputs */
+
+.customer-form input,
+.customer-form select,
+.customer-form textarea {
+
+  width: 100%;
+  padding: 12px 15px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+
+.customer-form input:focus,
+.customer-form select:focus,
+.customer-form textarea:focus {
+
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37,99,235,0.3);
+
+}
+
+
+/* Address textarea */
+
+.customer-form textarea {
+
+  grid-column: span 2;
+  height: 100px;
+  resize: none;
+
+}
+
+
+/* Button */
+
+.customer-form button {
+
+  grid-column: span 2;
+
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  padding: 13px;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+
+.customer-form button:hover {
+
+  background: #1d4ed8;
+  transform: translateY(-2px);
+
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+  .customer-form form{
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .customer-form textarea,
+  .customer-form button{
+
+    grid-column: span 1;
+
+  }
+
+
+  .customer-form{
+
+    padding: 25px;
+
+  }
+
+}

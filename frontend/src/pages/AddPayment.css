@@ -1,0 +1,213 @@
+/* ==========================
+   Add Payment Container
+========================== */
+
+.add-payment-container {
+  min-height: 100vh;
+  background: #f4f7fc;
+  padding: 40px 20px;
+}
+
+.add-payment-container h1 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* ==========================
+   Card
+========================== */
+
+.add-payment-card {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.add-payment-card:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================
+   Form Group
+========================== */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 15px;
+  color: #1f2937;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+/* ==========================
+   Submit Button
+========================== */
+
+.add-payment-btn-submit {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-payment-btn-submit:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.add-payment-btn-submit:active {
+  transform: translateY(0);
+}
+
+.add-payment-btn-submit:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ==========================
+   Loading
+========================== */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* ==========================
+   Input Validation
+========================== */
+
+.form-group input:invalid,
+.form-group select:invalid {
+  border-color: #d1d5db;
+}
+
+.form-group input:valid,
+.form-group select:valid {
+  border-color: #22c55e;
+}
+
+/* ==========================
+   Autofill Fix
+========================== */
+
+input:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+  -webkit-text-fill-color: #1f2937;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+  .add-payment-container {
+    padding: 20px 15px;
+  }
+
+  .add-payment-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .add-payment-card {
+    padding: 22px;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .add-payment-btn-submit {
+    font-size: 15px;
+    padding: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-payment-container {
+    padding: 15px 10px;
+  }
+
+  .add-payment-card {
+    padding: 18px;
+  }
+
+  .add-payment-container h1 {
+    font-size: 22px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 11px;
+  }
+
+  .add-payment-btn-submit {
+    padding: 12px;
+  }
+}

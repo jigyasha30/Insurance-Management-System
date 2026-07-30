@@ -1,0 +1,321 @@
+/* ==========================
+   Add Claim Container
+========================== */
+
+.add-claim-container {
+
+  padding:30px;
+
+  background:#f4f7fc;
+
+  min-height:100vh;
+
+}
+
+
+
+/* ==========================
+   Heading
+========================== */
+
+.add-claim-container h1 {
+
+  color:#1f2937;
+
+  font-size:32px;
+
+  font-weight:700;
+
+  margin-bottom:30px;
+
+  text-align:center;
+
+}
+
+
+
+/* ==========================
+   Form Card
+========================== */
+
+.add-claim-card {
+
+  background:white;
+
+  max-width:700px;
+
+  margin:auto;
+
+  padding:35px;
+
+  border-radius:15px;
+
+  box-shadow:
+  0 8px 20px rgba(0,0,0,0.08);
+
+  transition:0.3s;
+
+}
+
+
+
+.add-claim-card:hover {
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.12);
+
+}
+
+
+
+
+
+/* ==========================
+   Form Group
+========================== */
+
+.form-group {
+
+  display:flex;
+
+  flex-direction:column;
+
+  margin-bottom:20px;
+
+}
+
+
+
+.form-group label {
+
+  font-size:15px;
+
+  font-weight:600;
+
+  color:#374151;
+
+  margin-bottom:8px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Input Select Textarea
+========================== */
+
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea {
+
+
+  width:100%;
+
+  padding:14px 15px;
+
+  border:1px solid #d1d5db;
+
+  border-radius:10px;
+
+  font-size:15px;
+
+  color:#1f2937;
+
+  background:white;
+
+  outline:none;
+
+  box-sizing:border-box;
+
+  transition:0.3s;
+
+}
+
+
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus {
+
+
+  border-color:#2563eb;
+
+
+  box-shadow:
+
+  0 0 0 3px rgba(37,99,235,0.15);
+
+}
+
+
+
+.form-group textarea {
+
+
+  min-height:120px;
+
+  resize:vertical;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Submit Button
+========================== */
+
+
+.add-claim-submit {
+
+
+  width:100%;
+
+  background:#2563eb;
+
+  color:white;
+
+  border:none;
+
+  padding:14px;
+
+  border-radius:10px;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  margin-top:10px;
+
+  transition:0.3s;
+
+}
+
+
+
+.add-claim-submit:hover {
+
+
+  background:#1d4ed8;
+
+  transform:translateY(-1px);
+
+
+}
+
+
+
+.add-claim-submit:active {
+
+  transform:translateY(0);
+
+}
+
+
+
+.add-claim-submit:disabled {
+
+
+  background:#9ca3af;
+
+  cursor:not-allowed;
+
+}
+
+
+
+
+
+/* ==========================
+   Responsive
+========================== */
+
+
+@media(max-width:768px){
+
+
+  .add-claim-container{
+
+    padding:20px;
+
+  }
+
+
+
+  .add-claim-container h1{
+
+    font-size:26px;
+
+  }
+
+
+
+  .add-claim-card{
+
+    padding:25px;
+
+  }
+
+
+
+  .form-group input,
+
+  .form-group select,
+
+  .form-group textarea {
+
+    font-size:14px;
+
+    padding:12px;
+
+  }
+
+
+}
+
+
+
+
+@media(max-width:480px){
+
+
+  .add-claim-container{
+
+    padding:15px;
+
+  }
+
+
+
+  .add-claim-container h1{
+
+    font-size:22px;
+
+  }
+
+
+
+  .add-claim-card{
+
+    padding:18px;
+
+    border-radius:10px;
+
+  }
+
+
+}

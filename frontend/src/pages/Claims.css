@@ -1,0 +1,369 @@
+/* ==========================
+   Claims Container
+========================== */
+
+.claims-container {
+
+  padding:30px;
+
+  background:#f4f7fc;
+
+  min-height:100vh;
+
+}
+
+
+
+/* ==========================
+   Header
+========================== */
+
+.claims-header {
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  margin-bottom:30px;
+
+}
+
+
+.claims-header h1 {
+
+  color:#1f2937;
+
+  font-size:32px;
+
+  font-weight:700;
+
+}
+
+
+
+/* ==========================
+   Add Button
+========================== */
+
+.add-claim-btn {
+
+  background:#2563eb;
+
+  color:white;
+
+  border:none;
+
+  padding:14px 25px;
+
+  border-radius:10px;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+}
+
+
+.add-claim-btn:hover {
+
+  background:#1d4ed8;
+
+}
+
+
+
+/* ==========================
+   Table
+========================== */
+
+
+.claims-table {
+
+  width:100%;
+
+  border-collapse:separate;
+
+  border-spacing:0;
+
+  background:white;
+
+  border-radius:15px;
+
+  overflow:hidden;
+
+  box-shadow:
+  0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+
+.claims-table thead {
+
+  background:#eef3fb;
+
+}
+
+
+
+.claims-table th {
+
+  padding:20px;
+
+  text-align:center;
+
+  color:#1f3b64;
+
+  font-size:16px;
+
+  font-weight:700;
+
+  white-space:nowrap;
+
+}
+
+
+
+.claims-table td {
+
+  padding:18px;
+
+  text-align:center;
+
+  color:#374151;
+
+  font-size:16px;
+
+  border-bottom:1px solid #e5e7eb;
+
+  white-space:nowrap;
+
+}
+
+
+
+.claims-table tbody tr:hover {
+
+  background:#f8fafc;
+
+}
+
+
+
+/* ==========================
+   Status Badge
+========================== */
+
+
+.status-badge {
+
+  padding:7px 14px;
+
+  border-radius:20px;
+
+  font-size:14px;
+
+  font-weight:600;
+
+  display:inline-block;
+
+}
+
+
+
+/* Status Colors */
+
+
+.status-badge.pending {
+
+  background:#fef3c7;
+
+  color:#92400e;
+
+}
+
+
+
+.status-badge.approved {
+
+  background:#dcfce7;
+
+  color:#166534;
+
+}
+
+
+
+.status-badge.rejected {
+
+  background:#fee2e2;
+
+  color:#991b1b;
+
+}
+
+
+
+
+
+/* ==========================
+   Actions
+========================== */
+
+
+.action-buttons {
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:10px;
+
+  flex-wrap:nowrap;
+
+}
+
+
+
+.action-buttons button {
+
+  border:none;
+
+  color:white;
+
+  padding:9px 18px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  font-size:14px;
+
+  font-weight:600;
+
+  white-space:nowrap;
+
+}
+
+
+
+/* Edit */
+
+.edit-btn {
+
+  background:#f59e0b;
+
+}
+
+
+.edit-btn:hover {
+
+  background:#d97706;
+
+}
+
+
+
+/* Delete */
+
+.delete-btn {
+
+  background:#dc2626;
+
+}
+
+
+.delete-btn:hover {
+
+  background:#b91c1c;
+
+}
+
+
+
+/* ==========================
+   Empty State
+========================== */
+
+
+.empty-state {
+
+  text-align:center;
+
+  padding:30px;
+
+  font-size:18px;
+
+  color:#6b7280;
+
+}
+
+
+
+/* ==========================
+   Loading
+========================== */
+
+
+.loading {
+
+  text-align:center;
+
+  margin-top:100px;
+
+  color:#2563eb;
+
+}
+
+
+
+/* ==========================
+   Responsive
+========================== */
+
+
+@media(max-width:900px){
+
+
+.claims-container{
+
+  padding:20px;
+
+}
+
+
+.claims-table{
+
+  display:block;
+
+  overflow-x:auto;
+
+}
+
+
+.claims-header{
+
+  flex-direction:column;
+
+  align-items:flex-start;
+
+  gap:15px;
+
+}
+
+
+.action-buttons{
+
+  flex-wrap:wrap;
+
+}
+
+
+}

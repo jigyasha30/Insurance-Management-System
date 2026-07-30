@@ -1,0 +1,147 @@
+/* ==========================
+   Add Document Container
+========================== */
+
+.add-document-container {
+  min-height: 100vh;
+  background: #f4f7fc;
+  padding: 40px 20px;
+}
+
+.add-document-container h1 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* ==========================
+   Form Card
+========================== */
+
+.add-document-card {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================
+   Form Group
+========================== */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.2);
+}
+
+/* ==========================
+   File Input
+========================== */
+
+.form-group input[type="file"] {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.form-group input[type="file"]::file-selector-button {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.form-group input[type="file"]::file-selector-button:hover {
+  background: #1d4ed8;
+}
+
+/* ==========================
+   Upload Button
+========================== */
+
+.upload-document-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-document-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.upload-document-btn:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+
+  .add-document-container {
+    padding: 25px 15px;
+  }
+
+  .add-document-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .add-document-card {
+    padding: 22px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+  }
+
+  .upload-document-btn {
+    font-size: 15px;
+    padding: 13px;
+  }
+
+}
